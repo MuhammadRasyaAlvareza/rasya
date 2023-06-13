@@ -31,19 +31,19 @@ vin_values = vin_amplitude * np.sin(2 * np.pi * 5 * t)
 vout_values= vo1 * np.sin(2 * np.pi * 5 * t)
 
 
-# Plotting
-fig, axs = plt.subplots(2, 1, figsize=(8, 6))
-fig.suptitle('Karakteristik Tegangan Input-Output')
+  # Plotting
+  fig, axs = plt.subplots(2, 1, figsize=(8, 6))
+  fig.suptitle('Karakteristik Tegangan Input-Output')
 
-# Input signal plot
-axs[0].plot(t, vin_values)
-axs[0].set_xlabel('Waktu')
-axs[0].set_ylabel('Tegangan Input (Vin)')
+  # Input signal plot
+  axs[0].plot(t, vin_values)
+  axs[0].set_xlabel('Waktu')
+  axs[0].set_ylabel('Tegangan Input (Vin)')
 
-# Output signal plot
-axs[1].plot(t, vout_values)
-axs[1].set_xlabel('Waktu')
-axs[1].set_ylabel('Tegangan Keluaran (Vout)')
+  # Output signal plot
+  axs[1].plot(t, vout_values)
+  axs[1].set_xlabel('Waktu')
+  axs[1].set_ylabel('Tegangan Keluaran (Vout)')
 
-plt.tight_layout()
-st.pyplot(fig)
+  plt.tight_layout()
+  st.pyplot(fig)
